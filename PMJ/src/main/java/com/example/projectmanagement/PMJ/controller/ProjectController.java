@@ -71,7 +71,7 @@ public class ProjectController {
         return new ResponseEntity<>(updateproject, HttpStatus.OK);
     }
 
-    @DeleteMapping("/chat/{projectId}")
+    @DeleteMapping("/{projectId}")
     public ResponseEntity<MessageResponse>deleteProject(
             @PathVariable Long projectId,
             @RequestHeader("Authorization")String jwt
